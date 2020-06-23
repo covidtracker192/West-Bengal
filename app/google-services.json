@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "956446483324",
+    "firebase_url": "https://west-bengal-a2257.firebaseio.com",
+    "project_id": "west-bengal-a2257",
+    "storage_bucket": "west-bengal-a2257.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:956446483324:android:4bd8bcf7debf9ece79faf9",
+        "android_client_info": {
+          "package_name": "com.covid19.westbengal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "956446483324-m4hbre5gj30ra08dnhkvn18q39aq82p1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.covid19.westbengal",
+            "certificate_hash": "3db8cd558aff88d5fbd857bf239382aeafe23508"
+          }
+        },
+        {
+          "client_id": "956446483324-llttit3psb2gu76411mia2q1q4qa9de0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD8ZKR5wby3yNafgZJFKjdMvRacRhp0uLw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "956446483324-llttit3psb2gu76411mia2q1q4qa9de0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
