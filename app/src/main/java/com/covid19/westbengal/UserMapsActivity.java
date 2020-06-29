@@ -1,10 +1,15 @@
 package com.covid19.westbengal;
 
+import androidx.core.app.ActivityCompat;
 import androidx.fragment.app.FragmentActivity;
+
+import android.Manifest;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.location.Location;
 import android.os.Bundle;
 import android.os.Looper;
+
 import com.firebase.geofire.GeoFire;
 import com.firebase.geofire.GeoLocation;
 import com.firebase.geofire.GeoQuery;
@@ -31,7 +36,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class UserMapsActivity extends FragmentActivity implements OnMapReadyCallback{
+public class UserMapsActivity extends FragmentActivity implements OnMapReadyCallback {
     LatLng latLng;
     private GoogleMap nMap;
     private FusedLocationProviderClient fusedLocationClient;
@@ -39,6 +44,7 @@ public class UserMapsActivity extends FragmentActivity implements OnMapReadyCall
     LocationRequest mLocationRequest;
     Location mLastLocation;
     String uuid;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -46,6 +52,7 @@ public class UserMapsActivity extends FragmentActivity implements OnMapReadyCall
         mapFragment = (SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
     }
+
     @Override
     public void onMapReady(GoogleMap googleMap) {
         nMap = googleMap;
@@ -56,8 +63,6 @@ public class UserMapsActivity extends FragmentActivity implements OnMapReadyCall
         mLocationRequest.setPriority(LocationRequest.PRIORITY_HIGH_ACCURACY);
         fusedLocationClient.requestLocationUpdates(mLocationRequest, mLocationCallback, Looper.myLooper());
         nMap.setMyLocationEnabled(true);
-
-
     }
     LocationCallback mLocationCallback=new LocationCallback(){
         @Override
